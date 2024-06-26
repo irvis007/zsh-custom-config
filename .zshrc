@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -80,14 +80,13 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
-	zsh-autosuggestions 
 	git 
 	z 
 	command-not-found
 	sudo
 	colored-man-pages
 	zsh-syntax-highlighting
-	
+	zsh-autosuggestions 
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -136,6 +135,3 @@ export PATH=$PATH:/home/lblazejowski/.tfenv/bin/terraform
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
